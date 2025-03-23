@@ -23,11 +23,11 @@ public class QAJobsPage extends BasePage {
 
     public void filterJobs(String location, String department) throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElement locationFilter = waitForElement(By.xpath("//span[@id = 'select2-filter-by-location-container']"));
         locationFilter.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElement locationSelection = waitForElement(By.xpath("//select[@id = 'filter-by-location']"));
         Select locationSelect = new Select(locationSelection);
         locationSelect.selectByVisibleText(location);
