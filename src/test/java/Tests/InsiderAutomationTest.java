@@ -18,6 +18,7 @@ public class InsiderAutomationTest {
 
     @BeforeClass
     public static void setUp() {
+        //Chrome driver path
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Yusuf\\Desktop\\Java_Projects\\yusuf_bilge_ozpolat_case\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
